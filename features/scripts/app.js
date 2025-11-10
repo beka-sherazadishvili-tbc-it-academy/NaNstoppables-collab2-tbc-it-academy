@@ -57,6 +57,7 @@ const domQuestions = [
 
 var randomQuestions = [];
 const taskTitle = document.querySelector(".quiz__section__header-wrapper");
+const taskItems = document.querySelector(".quiz__section__answer-wrapper");
 
 function startGame() {
   let randomIndex = Math.floor(Math.random() * (domQuestions.length - 1)) + 1;
@@ -76,5 +77,3 @@ function startGame() {
   }
 }
 startGame();
-
-
