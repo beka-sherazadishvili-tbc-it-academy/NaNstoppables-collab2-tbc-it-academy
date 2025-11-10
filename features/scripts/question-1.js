@@ -33,4 +33,4 @@ function addNumericBalls() {
         console.log(button);
         answerOutput.appendChild(button);
     });
-}g
+}

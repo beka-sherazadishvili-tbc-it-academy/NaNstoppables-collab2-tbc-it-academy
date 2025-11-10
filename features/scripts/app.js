@@ -2,11 +2,31 @@ const domQuestions = [
     {
         id: 1,
         question: 'create new div item from 1..5',
-        questionHTML: '',
+        questionHTML: `
+        <div class="quiz__section__answer-wrapper__solution">
+                        <button>Add</button>
+                        <button>Clear</button>
+                    </div>
+            <div class="quiz__section__answer-wrapper__buttons">
+            </div>
+        `,
         winScore: 50,
         hintMinus: 20,
         hint: "click add button five times",
-        answer: '',
+        answer: `
+                    <div class="quiz__section__answer-wrapper__solution">
+                        <button>Add</button>
+                        <button>Clear</button>
+                    </div>
+            <div class="quiz__section__answer-wrapper__buttons">
+                <button data-btn="1">1</button>
+                <button data-btn="2">2</button>
+                <button data-btn="3">3</button>
+                <button data-btn="4">4</button>
+                <button data-btn="5">5</button>
+            </div>
+        `,
+
     },
     {
         id: 2,
