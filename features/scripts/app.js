@@ -60,7 +60,7 @@ const domQuestions = [
     {
         id: 5,
         question: 'toggle to the light theme',
-        questionHTML: '',
+        questionHTML: '<button class="toggle">Toggle theme</button>',
         winScore: 100,
         hintMinus: 30,
         hint: 'click button to change theme',
