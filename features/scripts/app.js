@@ -59,3 +59,27 @@ const domQuestions = [
         answer: '',
     },
 ]
+
+
+var randomQuestions = [];
+const taskTitle = document.querySelector(".quiz__section__header-wrapper");
+const taskItems = document.querySelector(".quiz__section__answer-wrapper");
+
+function startGame() {
+  let randomIndex = Math.floor(Math.random() * (domQuestions.length - 1)) + 1;
+  randomQuestions = [];
+  let currentCount = 0;
+  if (
+    randomQuestions.some((element) => {
+      element === randomIndex;
+    })
+  ) {
+    randomIndex = Math.floor(Math.random() * 6) + 1;
+  } else {
+    randomQuestions.push(randomIndex);
+    taskTitle.innerHTML = "";
+    taskTitle.innerHTML = `<h2>Task:</h2> <p>${domQuestions[randomIndex].question}</p>`;
+    currentCount++;
+  }
+}
+startGame();
