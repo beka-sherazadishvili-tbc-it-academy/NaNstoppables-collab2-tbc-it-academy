@@ -32,7 +32,7 @@ const domQuestions = [
         questionHTML: '',
         winScore: 100,
         hintMinus: 30,
-        hint: '',
+        hint: 'sort conparing numbers',
         answer: '',
     },
     {
