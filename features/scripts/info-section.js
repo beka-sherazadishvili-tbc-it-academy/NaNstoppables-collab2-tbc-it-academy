@@ -38,5 +38,6 @@ function startCountdown() {
   }, 1000);
 }
 
+
 updateScores();
 startCountdown();
