@@ -3,7 +3,7 @@ let num2 = document.querySelector('.number-2');
 let answer = document.querySelector('.answer');
 let operator = document.querySelector('.quiz__section__answer-wrapper__solution p');
 
-function returnSum(a, b) {
+function returnSum() {
     const num1Random = getRandomInt(1, 10)
     const num2Random = getRandomInt(1, 10)
     num1.innerHTML = num1Random;
@@ -21,8 +21,7 @@ function returnSum(a, b) {
         }
     })
 }
-
-// returnSum();
+returnSum();
 
 
 

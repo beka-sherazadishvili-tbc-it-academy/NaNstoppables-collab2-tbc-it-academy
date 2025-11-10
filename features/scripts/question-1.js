@@ -34,3 +34,5 @@ function addNumericBalls() {
         answerOutput.appendChild(button);
     });
 }
+
+addNumericBalls();
