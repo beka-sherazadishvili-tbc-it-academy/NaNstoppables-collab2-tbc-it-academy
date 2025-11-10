@@ -1,16 +1,16 @@
 @use "../components/header";
 @use "../layout/hero";
-@use "../layout/quiz-section";
+@use "../layout/info-section";
+@use "../components/button_info";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
-    font-family: "Inter", sans-serif;
-    background-color: #121212;
-    main {
-        display: flex;
-
-        max-width: 1440px;
-        width: 100%;
-        min-height: 1080px;
-    }
+  font-family: "Inter", sans-serif;
+  background-color: #121212;
+  main {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 1080px;
+  }
 }
