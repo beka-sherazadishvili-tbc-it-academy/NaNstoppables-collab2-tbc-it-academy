@@ -1,5 +1,6 @@
 @use "../components/header";
 @use "../layout/hero";
+@use "../layout/quiz-section";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
@@ -7,7 +8,6 @@ body {
     background-color: #121212;  
     main {
         display: flex;
-        
         max-width: 1440px;
         width: 100%;
         min-height: 1080px;
