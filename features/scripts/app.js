@@ -79,6 +79,7 @@ function startGame() {
     randomQuestions.push(randomIndex);
     taskTitle.innerHTML = "";
     taskTitle.innerHTML = `<h2>Task:</h2> <p>${domQuestions[randomIndex].question}</p>`;
+    taskItems.innerHTML = domQuestions[randomIndex].questionHTML;
     currentCount++;
   }
 }
