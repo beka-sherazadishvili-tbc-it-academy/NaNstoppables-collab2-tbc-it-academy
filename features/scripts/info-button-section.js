@@ -1,4 +1,4 @@
-var quizCurrentScore = 100;
+var quizCurrentScore = 0;
 let quizCurrentQuestion = 1;
 let quizTime = "10:00";
 let quizTimeInSeconds = 600;
