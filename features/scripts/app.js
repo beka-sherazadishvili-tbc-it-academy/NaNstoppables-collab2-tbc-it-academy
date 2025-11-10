@@ -49,7 +49,10 @@ const domQuestions = [
     {
         id: 6,
         question: 'calculate sum of the numbers',
-        questionHTML: ``,
+        questionHTML: `<div class="number-1"></div>
+                      <p>+</p>
+                      <div class="number-2"></div>
+                      <input type="text" class="answer">`,
         winScore: 100,
         hintMinus: 30,
         hint: 'you should enter the number of the sum', 
