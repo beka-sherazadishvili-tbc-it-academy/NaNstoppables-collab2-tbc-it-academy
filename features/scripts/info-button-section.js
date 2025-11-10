@@ -23,15 +23,17 @@ function updateScores() {
       } else {
         alert("You dont have enough points");
       }
-    } else if (div.innerText === "Hint (-100)") {
+    } else if (div.innerText === "Skip (-100)") {
       if (quizCurrentScore >= 100) {
         quizCurrentScore -= 100;
         currentScoreElement.innerHTML = `${quizCurrentScore}`;
-      } else if (div.innerText === "Reset Challenge") {
-        // placeholder
-      } else if (div.innerText === "Restart Run") {
-        // placeholder
+      } else {
+        alert("You dont have enough points");
       }
+    } else if (div.innerText === "Reset Challenge") {
+      // placeholder
+    } else if (div.innerText === "Restart Run") {
+      // placeholder
     }
   });
 }
@@ -41,9 +43,11 @@ function checkAnswer(currentAnswer, questionId) {
     item.id === questionId;
   });
 
-  let currentUserAnswer = currentAnswer.innerHTML;
+  let currentUserAnswer = currentAnswer.innerHTML.replaceAll(" ", "");
 
-  if (questionAnswer === currentUserAnswer) {
+  questionAnswerParsed = questionAnswer.questionHTML.replaceAll(" ", "");
+
+  if (currentUserAnswer === questionAnswerParsed) {
     return true;
   } else {
     return false;
