@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-.quiz__section {
+.info__section {
   background-color: #111729;
   max-width: 492px;
   width: 100%;
   height: 600px;
   padding: 1rem;
+  border-radius: 3rem;
 }
-.quiz__section__top {
+.info__section__top {
   max-width: 442px;
   gap: 0.5rem;
   max-height: 120px;
@@ -17,7 +18,7 @@
   padding: 1rem;
   color: #979daf;
 }
-.quiz__section__top .quiz__section__card {
+.info__section__top .info__section__card {
   width: 200px;
   height: 80px;
   display: flex;
@@ -29,9 +30,43 @@
   border-radius: 2rem;
   border: 1px solid white;
 }
-.quiz__section__top .quiz__section__card__title {
+.info__section__top .info__section__card__title {
   color: white;
   font-size: 1rem;
+}
+.info__section .info__section__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.info__section .info__section__buttons button {
+  width: 150px;
+  min-height: 30px;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn__verify {
+  background-color: rgba(33, 33, 236, 0.576);
+}
+
+.btn__hint,
+.btn__reset {
+  background-color: purple;
+}
+
+.btn__skip {
+  background-color: #2b2407;
+}
+
+.btn__restart {
+  background-color: #280f13;
 }
 
 body {
