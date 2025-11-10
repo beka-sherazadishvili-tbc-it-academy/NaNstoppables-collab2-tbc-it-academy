@@ -20,7 +20,9 @@ const domQuestions = [
     {
         id: 3,
         question: 'stop the counter while number is between 7 - 10',
-        questionHTML: '',
+        questionHTML: `<button class="q3_count_starter">Start</button>
+                        <button class="q3__count_pause">pause</button>
+                        <input type="number" min="0" class="q3_counter">`,
         winScore: 30,
         hintMinus: 10,
         hint: 'click stop once 7 is displayed and stop until 10',
@@ -47,7 +49,7 @@ const domQuestions = [
     {
         id: 6,
         question: 'calculate sum of the numbers',
-        questionHTML: '',
+        questionHTML: ``,
         winScore: 100,
         hintMinus: 30,
         hint: 'you should enter the number of the sum', 
