@@ -22,7 +22,7 @@ function returnSum(a, b) {
     })
 }
 
-returnSum();
+// returnSum();
 
 
 
