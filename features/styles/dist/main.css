@@ -1,1 +1,198 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+header .header__container {
+  max-width: 1440px;
+  width: 100%;
+  height: 60px;
+  font-family: inherit;
+  background-color: #111729;
+  border: solid 1px #5c6781;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+header .header__container .header__left {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+}
+header .header__container .header__left .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: #dfe5f6;
+  font-size: 20px;
+}
+header .header__container .header__left .title div {
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 3px;
+  background-color: #121b39;
+  border: 1px solid #dfe5f6;
+  border-radius: 8px;
+}
+header div:last-child p {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #121b39;
+  border: 1px solid #dfe5f6;
+  border-radius: 8px;
+  color: #dfe5f6;
+  font-size: 15px;
+}
+
+.quiz__section {
+  padding: 24px;
+  width: 900px;
+  height: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #111729;
+}
+.quiz__section__header-wrapper {
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #121212;
+  border: 2px solid #9399ab;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.quiz__section__header-wrapper h2 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.quiz__section__header-wrapper p {
+  font-size: 20px;
+  line-height: 24px;
+  color: #9399ab;
+}
+.quiz__section__answer-wrapper {
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #9399ab;
+  background-color: rgb(18, 18, 18);
+  height: 100%;
+  gap: 24px;
+}
+.quiz__section__answer-wrapper__solution {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.quiz__section__answer-wrapper__solution button {
+  padding: 14px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border: 2px solid #9399ab;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.quiz__section__next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 12px;
+  border-top: 2px solid #9399ab;
+}
+.quiz__section__next button {
+  padding: 14px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border: 2px solid #9399ab;
+  border-radius: 8px;
+  color: #9399ab;
+}
+
+.info__section {
+  background-color: #111729;
+  max-width: 492px;
+  width: 100%;
+  height: 600px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.info__section__top {
+  max-width: 442px;
+  gap: 0.5rem;
+  max-height: 120px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  color: #979daf;
+}
+.info__section__top .info__section__card {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 2rem;
+  border: 1px solid white;
+}
+.info__section__top .info__section__card__title {
+  color: white;
+  font-size: 1rem;
+}
+.info__section .info__section__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.info__section .info__section__buttons button {
+  width: 150px;
+  min-height: 30px;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn__verify {
+  background-color: rgba(33, 33, 236, 0.576);
+}
+
+.btn__hint,
+.btn__reset {
+  background-color: purple;
+}
+
+.btn__skip {
+  background-color: #2b2407;
+}
+
+.btn__restart {
+  background-color: #280f13;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #121212;
+}
+body main {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 1080px;
+}/*# sourceMappingURL=main.css.map */

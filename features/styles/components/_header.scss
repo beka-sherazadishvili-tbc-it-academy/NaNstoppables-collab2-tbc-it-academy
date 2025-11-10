@@ -1,0 +1,52 @@
+@use "../base/variables";
+
+header {
+    .header__container {
+        max-width: 1440px;
+        width: 100%;
+        height: 60px;
+        font-family: inherit;
+        background-color: #111729;
+        border: solid 1px #5c6781;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+
+        .header__left {
+            width: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: inherit;
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: inherit;
+                color: #dfe5f6;
+                font-size: 20px;
+                div {
+                    font-size: 15px;
+                    margin-left: 5px;
+                    padding: 3px;
+                    background-color: #121b39;
+                    border: 1px solid #dfe5f6;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    div:last-child {
+        p {
+            font-size: 10px;
+            padding: 3px;
+            background-color: #121b39;
+            border: 1px solid #dfe5f6;
+            border-radius: 8px;
+            color: #dfe5f6;
+            font-size: 15px;
+        }
+    }
+}
