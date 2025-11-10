@@ -1,7 +1,3 @@
-var quizCurrentScore = "0";
-let quizCurrentQuestion = "1";
-let quizTime = "10:00";
-let quizTimeInSeconds = 600;
 
 const currentCountElement = document.querySelector(
   ".info__section__card__count"
@@ -11,7 +7,7 @@ const currentScoreElement = document.querySelector(
 );
 const currentTimeElement = document.querySelector(".info__section__card__time");
 
-currentCountElement.innerHTML = `${quizCurrentQuestion}`;
+currentCountElement.innerHTML = `${quizCurrentQuestion} / ${totalQuestions}`;
 currentScoreElement.innerHTML = `${quizCurrentScore}`;
 currentTimeElement.innerHTML = `${quizTime}`;
 
@@ -42,4 +38,5 @@ function startCountdown() {
   }, 1000);
 }
 
+updateScores();
 startCountdown();
